@@ -1,0 +1,65 @@
+
+
+div.intro{
+    color:red;
+    background-color:aliceblue;
+    align-items:center;
+    justify-content:center;
+    font-size:22px;
+    
+}
+#circle{
+    color:blue;
+    background-color:azure;
+    font-weight:bold;
+}
+p.intro{
+    color:blueviolet;
+}
+h3,p{
+    color:brown;
+}
+div p{
+    background-color:aquamarine;
+    font-family:Arial, Helvetica, sans-serif;
+}
+div+p{
+    background-color:black;
+    color:white;
+}
+div>p{
+    font-size:30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+div~p{
+    border:1px solid red;
+}
+*{
+    background-color:antiquewhite;
+}
+a[target]{
+    font-size:20px;
+}
+[title~="computer"]{
+    border:5px solid blue;
+}
+
+[lang|="kannada"]{
+    background-color:burlywood;
+}
+
+div[class*="second"]{
+    background-color:chocolate;
+    color:darkolivegreen;
+}
+a{
+    background-color:hotpink;
+}
+[class*="view"]
+{
+    color:lawngreen;
+}
+div[class^="test"]{
+    background-color:lightcoral;
+    color:blueviolet;
+}
