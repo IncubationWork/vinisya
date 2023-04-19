@@ -1,0 +1,39 @@
+input:focus{
+    background-color:palevioletred;
+}
+body{
+    background-color:antiquewhite;
+}
+
+button{
+    padding:20px;
+    font-size:20px;
+}
+i:hover{
+    background-color:yellow;
+
+}
+input:in-range{
+    color:blueviolet;
+    border:2px solid aqua;
+}
+input:invalid{
+    border:2px solid red;
+}
+p:lang(range)
+{
+    background-color:greenyellow;
+}
+::placeholder{
+    color:maroon;
+}
+a:visited{
+    background-color:aquamarine;
+}
+::selection{
+    background-color:blueviolet;
+    color:chartreuse;
+}
+input:required {
+    background-color:lightcoral;
+  }

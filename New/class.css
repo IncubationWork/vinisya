@@ -1,5 +1,4 @@
 
-
 div.intro{
     color:red;
     background-color:aliceblue;
@@ -28,12 +27,25 @@ div+p{
     color:white;
 }
 div>p{
+    color:blue;
     font-size:30px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-div~p{
-    border:1px solid red;
+a:active{
+    background-color:purple;
+
 }
+
+b::after{
+    content:"-Remember this";
+    color:darkblue;
+
+}
+code::before{
+    content:"-Remember this";
+    font-family:'Times New Roman', Times, serif;
+}
+
 *{
     background-color:antiquewhite;
 }
@@ -43,23 +55,62 @@ a[target]{
 [title~="computer"]{
     border:5px solid blue;
 }
+div>a{
+    background-color:blueviolet;
+}
 
 [lang|="kannada"]{
     background-color:burlywood;
 }
 
 div[class*="second"]{
+
     background-color:chocolate;
     color:darkolivegreen;
 }
-a{
-    background-color:hotpink;
+input:checked{
+    height:50px;
+    width:40px;
+    color:blue;
+}
+input[type=text]:enabled{
+    background:red;
+}
+input[type=text]:disabled{
+    background:pink;
 }
 [class*="view"]
 {
     color:lawngreen;
 }
+
 div[class^="test"]{
     background-color:lightcoral;
     color:blueviolet;
+}
+
+button:default{
+    box-shadow:2px 2px 2px 2px greenyellow;
+    
+}
+:target{
+    background-color:2px solid aqua;
+    font-weight:bold;
+    border:2px solid rosybrown;
+}
+div~code{
+    border:1px solid red;
+}
+div:empty{
+    width:300px;
+    height:30px;
+    background-color:cadetblue;
+}
+li:first-child{
+    background-color:brown;
+}
+
+h4::first-letter{
+    color:#8A2BE2;
+font-size:200%;
 }
