@@ -37,3 +37,30 @@ a:visited{
 input:required {
     background-color:lightcoral;
   }
+  p:last-child{
+    background-color:blue;
+  }
+  input:read-only{
+    background-color:darkseagreen;
+  }
+  ::marker{
+    color:orange;
+  }
+input:out-of-range{
+    border:2px solid olivedrab;
+}
+li:nth-child(2){
+    background-color:yellowgreen;
+    color:black;
+}
+:nth-child(3){
+    color:black;
+}
+li:nth-last-child(2){
+    background-color:black;
+    color:white;
+}
+li:nth-last-child(1){
+    background-color:#ff0000;
+    color:black;
+}
