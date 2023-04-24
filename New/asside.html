@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    </head>
+    <style>
+.container{
+    display:flex;
+    flex-flow:wrap row;
+    background-color:rgb(0, 247, 255);
+}
+.container *{
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin:20px;
+    font-size:30px;
+    
+}
+.header{
+    background-color:rgb(0, 128, 117);
+    padding:50px;
+    flex-basis:100%;
+}
+.aside{
+    background-color:lime;
+    padding:150px;
+  
+}
+
+.row{
+    background:orange;
+    flex-basis:73%;
+    
+    padding-top:100px;
+
+}
+.footer{
+    background-color:rgb(0, 128, 117);
+    flex-basis:100%;
+padding:50px;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="header">Header</div>
+    <div class="aside">Aside</div>
+    <div class="row">
+        <div class="article" >Article</div>
+    <img src="bird1.jpeg" width="150" height="150">
+      <img src="bird2.jpg" width="150" height="150">
+        <img src="bird3.png" width="150" height="150"></div>
+    <div class="footer">Footer</div>
+    </div>
+</body>
+</html>

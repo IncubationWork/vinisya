@@ -8,62 +8,69 @@
 <head>
     <style>
 .container{
-    background-color:aqua;
-    padding:15px;
+    display: flex;
+    flex-flow: wrap row;
+    background-color:rgb(0, 255, 234);
+}
+
+.container *{
+    padding: 40px;
+    margin: 10px;
+    color:white;
+    text-align:center;
+    font-size:30px;
 }
 .header{
-    background-color:darkturquoise;
-    color:white;
+    background-color:rgb(0, 209, 199);
     
-    line-height:75px;
-    text-align:center;
-    font-weight:bold;
-    margin:15px;
+    flex-basis: 100%;
 }
 .navigation{
-    background-color:lightgreen;
-    line-height:75px;
-    text-align:center;
-    color:white;
-    font-weight:bold;
-    margin:15px;
+    background-color:darkseagreen;
+    flex-basis: 100%;
 }
-.aside{
-    background-color:chartreuse;
-    color:white;
-    height:350px;
-    width:300px;
-    
-justify-content:center;
-    text-align:center;
-    margin:15px;
-}
-.aside>div{
-    background-color:red;
-    color:white;
-}
-
 
 .Footer{
-    background-color:darkturquoise;
-    color:white;
-    font-weight:bold;
+    background-color:rgb(0, 209, 199);
 
-    line-height:75px;
-    text-align:center;
-    margin:15px;
-
+flex-basis: 100%;
 
 }
+.aside{
+    background-color:rgb(94, 255, 0);
+    padding:100px;
+    flex: 1;
+    }
+   
 
-</style></head>
-<body>
+.c1{
+    background-color:cornflowerblue;
+    margin: 0 0 10px 0;
+}
+.c2{
+    background: darkblue;
+    margin: 18px 0 0 0;
+}
+
+.content{
+    text-align:center;
+flex-direction:column;
+flex-flow: wrap row;
+flex: 3;
+padding: 0;
+
+}
+</style>
+</head>
+<body>   
     <div class="container">
         <div class="header">Header</div>
         <div class="navigation">Navigation</div>
         <div class="aside">Aside</div>
-        <div>Content</div>
-        <div>Section</div>
+        <div class="content">
+            <div class="c1">content</div>
+            <div class="c2">section</div>
+        </div>
            <div class="Footer">Footer</div>
     </div>
 </body>
