@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            width:100vw;
+            height:100vh;
+            display:grid;
+            grid-template-areas:'header header header'
+                             'side  main ads'
+                              'footer footer footer';
+            
+        }
+        *{
+            padding:0;
+            margin:0;
+            box-sizing:border-box;
+        }
+    
+        #header, 
+        #side, 
+        #main, 
+        #ads,
+         #footer{
+            background-color:aquamarine;
+            color:white;
+            padding:20px;
+            border:5px solid red;
+        }
+    
+        #header{
+            grid-area:header;
+        }
+        #side{
+            grid-area:side;
+        }
+        #main{
+            grid-area:main;
+        }
+        #ads{
+            grid-area:ads;
+
+        }
+        #footer{
+            grid-area:footer;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <div id="header">Header</div>
+    <div id="side">sidebar</div>
+<div id="main">Main</div>
+
+    <div id="ads">Ads</div>  
+<div id="footer">Footer</div>
+</body>
+</html>
