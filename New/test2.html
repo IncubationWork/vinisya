@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width:100vw;
+            height:100vh;
+            display:grid;
+        border:5px solid white;
+      
+            gap:10px;
+                    }
+    *{
+        margin:0;
+        padding : 0;
+        background-color:beige;
+        
+        font-size:30px;
+        box-sizing:border-box;
+    }
+    .grid-box{
+    
+        background-color:rgb(255, 217, 28);
+        color:white;
+    }
+    .item1{
+        grid-column:span 4;
+    }
+    .item2{
+        grid-row:2 / 6;
+        
+    }
+    .item3{
+        grid-column:2;
+    }
+    .item7{
+      grid-column:2 / 3;
+    }
+   
+    .item4{
+        grid-column:span 2;
+    }
+   
+    .item5{
+        grid-column:span 2;
+
+    }
+
+    .item10{
+        grid-column: span 3 ;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="grid-box item1">1</div>
+        <div class="grid-box item2">2</div>
+        <div class="grid-box item3">3</div>
+        <div class="grid-box item4">4</div>
+        <div class="grid-box item5">5</div>
+        <div class="grid-box item6">6</div>
+        <div class="grid-box item7">7</div>
+        <div class="grid-box item8">8</div>
+        <div class="grid-box item9">9</div>     
+        <div class="grid-box item10">10</div>
+        
+        </div>
+    
+</body>
+</html>

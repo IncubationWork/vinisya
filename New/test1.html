@@ -5,59 +5,61 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        body{
-            width:100vw;
-            height:100vh;
-            display:grid;
-            grid-template-areas:'header header header'
-                             'side  main ads'
-                              'footer footer footer';
-            
-        }
-        *{
-            padding:0;
-            margin:0;
-            box-sizing:border-box;
-        }
+        <style>
+    .container{
+        display:grid;
+     width:100vw;
+     height:100vh;
+        grid-template-columns:25% 1fr  25%;
+       grid-template-rows:100px 100px 1fr 100px;
+     border:5px solid white;
+     background-color:rgb(255,247,244);
+        gap:10px;               
+    }
+    *{
+     margin:0;
+     padding:0;
+     box-sizing:border-box;
     
-        #header, 
-        #side, 
-        #main, 
-        #ads,
-         #footer{
-            background-color:aquamarine;
-            color:white;
-            padding:20px;
-            border:5px solid red;
-        }
+    }
+    .grid-item{
     
-        #header{
-            grid-area:header;
-        }
-        #side{
-            grid-area:side;
-        }
-        #main{
-            grid-area:main;
-        }
-        #ads{
-            grid-area:ads;
-
-        }
-        #footer{
-            grid-area:footer;
-        }
-        
+     border:3px solid red;
+     border-radius:5px;
+         background-color:white;
+    }
+    
+    .box-1{
+     grid-column:span 3;
+    
+    }
+    .box-2{
+     grid-row:2 / span 2; 
+    }
+    .box-3{
+     grid-row:2;
+    
+    }
+    .box-4{
+     grid-column:2 / span 1;
+    
+    }
+    .box-5{
+     grid-row:2 / span 2;
+    
+    }
+    .box-6 {
+     grid-column: span 3;
+    }
     </style>
-</head>
-<body>
-
-    <div id="header">Header</div>
-    <div id="side">sidebar</div>
-<div id="main">Main</div>
-
-    <div id="ads">Ads</div>  
-<div id="footer">Footer</div>
+    </head>
+    <body>
+    <div class="container">
+    <div class="grid-item box-1">Header</div>
+    <div class="grid-item box-2">sidebar</div>
+    <div class="grid-item box-3">Navigation</div>
+    <div class="grid-item box-4">Main</div>
+    <div class="grid-item box-5">Ads</div>
+    <div class="grid-item box-6">Footer</div>  </div>
 </body>
 </html>
