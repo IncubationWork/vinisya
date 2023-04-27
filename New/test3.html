@@ -10,42 +10,73 @@
     display:grid;
     width:100vw;
     gap:10px;
-    height:90vh;
+    height:100vh;
+    border:5px solid white;
+    grid-template-areas:'feature feature feature header header header header'
+     'side product product product product product feature2'
+     'side product product product product product .'
+     'side bonus1 . . . bonus3 feature3'
+     'side . bonus2 bonus2 . . bonus4'
+     'side footer footer footer footer footer footer';
+    grid-template-rows:1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns:1fr 1fr 0.5fr 0.5fr 1fr 1fr 1fr;
 }
-
-      .item1{
-        background-color:brown;
-        color:white;
-        grid-row-start:1;
-        grid-row-end:2;
-         }
-         .item2{
-        background-color:black;
-        color:white;
-        grid-row-start:1;
-        grid-row-end:2;
-         }
-         .item3{
-            background-color:greenyellow;
-        color:white;
-        grid-row:5 / span 5;
-        
+.item1{
+    background-color:brown;
+    color:white;
+    grid-area:feature;
+}
+.item2{
+    background-color:black;
+    color:white;
+    grid-area:header;
+}
+.item3{
+    background-color:green;
+    color:white;
+    grid-area:side;
 }
 .item4{
     background-color:blue;
     color:white;
+    grid-area:product;
+}
+.item5{
+    background-color:red;
+    color:white;
+    grid-area:feature2;
+}
+.item6{
+    background-color:pink;
+    color:white;
+    grid-area:bonus1;
 }
 
-.item5{
-            background-color:red;
-        color:white;
-        
-    
-}        .item6{
-            background-color:pink;
-        color:white;
-                
-} 
+    .item7{
+    background-color:pink;
+    color:white;
+    grid-area:bonus3;
+    }
+    .item8{
+    background-color:red;
+    color:white;
+    grid-area:feature3;
+    }
+    .item9{
+    background-color:pink;
+    color:white;
+    grid-area:bonus2;
+    }
+    .item10{
+    background-color:pink;
+    color:white;
+    grid-area:bonus4;
+    }
+    .item11{
+    background-color:darkgoldenrod;
+    color:white;
+    grid-area:footer;
+    }
 
 *{
     padding:0;
@@ -62,9 +93,9 @@
         <div class="item4">Products</div>
         <div class="item5">Feature2</div>
         <div class="item6">Bonus1</div>
-        <div class="item7">Bonus2</div>
-        <div class="item8">Bonus3</div>
-        <div class="item9">Feature3</div>
+        <div class="item7">Bonus3</div>
+        <div class="item8">Feature3</div>
+        <div class="item9">Bonus2</div>
         <div class="item10">Bonus4</div>
         <div class="item11">Footer</div>
 
