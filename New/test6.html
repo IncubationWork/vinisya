@@ -5,66 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        .container{
-            display:grid;
-            height:100vh;
-            width:100vw;
-            grid-template-areas:'head menu menu menu' 
-                               'hero hero hero hero' 
-                               'main main . image'
-                               'main main . extra'
-                                 'banner banner banner banner' ;
-                                 border:10px white;
-                               font-size:30px;
-                               color:white;
-                               grid-template-rows:150px 250px 200px 150px ;
-              }
-           .one{
-            background-color:brown;
-            grid-area:head;
-           }  
+<link rel="stylesheet" href="test6.css">     
 
-         .two{
-            background-color:aqua;
-            grid-area:menu;
-    
-         }
-
-        .three{
-grid-area:hero;
-background-color:blue;
-         }
-         .four{
-            grid-area:main;
-            background-color:blueviolet;
-         }
-         .five{
-            background-color:yellow;
-            grid-area:image;
-         }
-         .six{
-            background-color:chocolate;
-grid-area:extra;
-         }
-         
-         .seven{
-            background-color:black;
-            grid-area:banner;
-         }
-         
-        *{
-            margin:0;
-            padding:0;
-            box-sizing:border-box;
-        }
-    </style>
 </head>
 <body>
     <div class="container">
         <div class="one">Header</div>
         <div class="two">Menu</div>
-        <div class="three">Her0</div>
+        <div class="three">Hero</div>
         <div class="four">Main</div>
         <div class="five">Image</div>
         <div class="six">Extra</div>

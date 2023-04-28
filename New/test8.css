@@ -1,0 +1,134 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+.container{
+    display:grid;
+    width:100vw;
+    height:100vh;
+    grid-template-columns:1fr;
+    grid-template-rows:1fr 1fr 1fr 1fr 1fr;
+  gap:10px;
+  border-radius:2px;
+  border:10px solid white;
+  color:blue;
+  font-size:25px;
+}
+.container1{
+    display:grid;
+    text-align:center;
+         }
+
+  .box1{
+    grid-template-columns:1fr;
+    gap:10px;
+  }   
+.one{
+grid-row:1;
+grid-column:1;
+background-color:gray;
+}
+.box2{
+    grid-template-columns:1fr 1fr;
+    gap:10px;
+
+  }  
+.two{
+background-color:gray;
+grid-column:1;
+grid-row: 1; 
+}
+.three{
+background-color:gray;
+grid-column:2;        
+grid-row:1;
+
+}
+.box3{  
+    grid-template-columns:1fr 1fr 1fr;
+    gap:15px;
+}
+.four{
+background-color:gray;
+grid-column:1;        
+grid-row:1;
+
+}
+.five{
+background-color:gray;
+grid-column:2;        
+grid-row:1;
+
+}
+.six{
+background-color:gray;
+grid-column:3;        
+grid-row:1;
+
+}
+.box4{
+    grid-template-columns:1fr 1fr 1fr 1fr;
+    gap:10px;
+    }
+
+.seven{
+grid-column:1;        
+grid-row:1;
+background-color:gray;
+
+}
+.eight{
+    background-color:gray;
+grid-column:2;        
+grid-row:1;
+
+}
+.nine{
+grid-column:3;        
+grid-row:1;
+background-color:gray;
+
+
+}
+.ten{
+grid-column:4;        
+grid-row:1;
+background-color:gray;
+
+
+}
+.box5{
+    grid-template-columns:1fr 1fr 1fr 1fr 1fr;
+    gap:10px;
+}
+.elevel{
+background-color:gray;
+grid-column:1;        
+grid-row:1;
+
+}
+.twelve{
+background-color:gray;
+grid-column:2;        
+grid-row:1;
+
+}
+.thirteen{
+background-color:gray;
+grid-column:3;        
+grid-row:1;
+
+}
+.fourteen{
+background-color:gray;
+grid-column:4;        
+grid-row:1;
+
+}
+.fifteen{
+background-color:gray;
+grid-column:5;        
+grid-row:1;
+
+}
