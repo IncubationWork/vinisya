@@ -5,464 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        *{
-    padding:0;
-    margin:0;
-     }
-.container{
-display:grid;
-width:50vw;
-height:100vh;
-left:20%;
-gap:10px;
-position:relative;
-grid-template-columns:repeat(4,1fr);
-grid-template-rows: 1fr 0.25fr 1fr 0.25fr 1fr 0.25fr 1fr 0.25fr 1fr 0.25fr; 
-}
-.box1{
-grid-row:1;
-grid-column:1;
-grid-template-columns:2fr 1fr;
-grid-template-rows:1fr 1fr;
-display:grid;
-    }
-    .item1{
-background-color:black;
-grid-column:1;
-grid-row:1/3;
-border:1px solid white;
-
-} 
-.item2{
-background-color:black;
-border:1px solid white;
-grid-column:2;
-grid-row:1;
-
-} 
-.item3{
-background-color:black;
-grid-column:2;
-border:1px solid white;
-grid-row:2;
-} 
-.h1{
-grid-row:2;
-grid-column:1;
-text-align:center;
-
-} 
-.box2{
-grid-row:1;
-grid-column:2;
-grid-template-columns:1fr 2fr;
-grid-template-rows:1fr 1fr;
-display:grid;
-    }
-    .item4{
-background-color:black;
-grid-column:1;
-grid-row:1;
-border:1px solid white;
-
-} 
-.item5{
-background-color:black;
-border:1px solid white;
-grid-column:1;
-grid-row:2;
-
-} 
-.item6{
-background-color:black;
-grid-column:2;
-border:1px solid white;
-grid-row:1/3;
-} 
-.h2{
-grid-row:2;
-grid-column:2;
-text-align:center;
-
-} 
-.box3{
-grid-row:1;
-grid-column:3;
-grid-template-columns:1fr 1fr;
-grid-template-rows:1fr 2fr;
-display:grid;
-    }
-    .item7{
-background-color:black;
-grid-column:1;
-grid-row:1;
-border:1px solid white;
-
-} 
-.item8{
-background-color:black;
-border:1px solid white;
-grid-column:2;
-grid-row:1;
-
-} 
-.item9{
-background-color:black;
-border:1px solid white;
-grid-column:1/3;
-grid-row:2;
-} 
-.h3{
-grid-row:2;
-grid-column:3;
-text-align:center;
-} 
-.box4{
-display:grid;
-position: relative;
-top: 20%;
-height:8vh;
-grid-row:1;
-grid-column:4;
-grid-template-columns:1fr 2fr;
-grid-template-rows:1fr ;
-    }
-    .item10{
-background-color:black;
-grid-column:1;
-grid-row:1;
-border:1px solid white;
-
-} 
-.item11{
-background-color:black;
-border:1px solid white;
-grid-column:2;
-grid-row:1;
-
-} 
-
-.h4{
-grid-row:2;
-grid-column:4;
-text-align:center;
-} 
-.box5{
-display:grid;
-position: relative;
-top: 25%;
-height:8vh;
-grid-row:3;
-grid-column:1;
-grid-template-columns:2fr 1fr;
-grid-template-rows:1fr ;
-    }
-    .item12{
-background-color:black;
-grid-column:1;
-grid-row:1;
-border:1px solid white;
-
-} 
-.item13{
-background-color:black;
-border:1px solid white;
-grid-column:2;
-grid-row:1;
-
-} 
-
-.h5{
-grid-row:4;
-grid-column:1;
-text-align:center;
-} 
-.box6{
-
-display:grid;
-grid-row:3;
-grid-column:2;
-grid-template-columns:1fr 1fr 1fr;
-grid-template-rows:1fr 1fr ;
-    }
-    .item14{
-background-color:black;
-grid-column:1/3;
-grid-row:1;
-border:1px solid white;
-
-} 
-.item15{
-background-color:black;
-border:1px solid white;
-grid-column:3/4;
-grid-row:1;
-
-} 
-.item16{
-background-color:black;
-border:1px solid white;
-grid-column:1/2;
-grid-row:2;
-
-} 
-.item17{
-background-color:black;
-border:1px solid white;
-grid-column:2/4;
-grid-row:2;
-
-} 
-
-.h6{
-grid-row:4;
-grid-column:2;
-text-align:center;
-} 
-.box7{
-    
-    display:grid;
-    grid-row:3;
-    grid-column:3;
-    grid-template-columns:1fr 1fr;
-    grid-template-rows:1fr 1fr ;
-        }
-        .item18{
-    background-color:black;
-    grid-column:1/2;
-    grid-row:1;
-    border:1px solid white;
-    
-    } 
-    .item19{
-    background-color:black;
-    border:1px solid white;
-    grid-column:1/2;
-    grid-row:2;
-    
-    } 
-    .item20{
-    background-color:black;
-    border:1px solid white;
-    grid-column:2;
-    grid-row:1/3;
-    
-    }     
-    .h7{
-    grid-row:4;
-    grid-column:3;
-    text-align:center;
-    } 
-    .box8{
-    
-    display:grid;
-    grid-row:3;
-    grid-column:4;
-    grid-template-columns:2fr 1fr 1fr;
-    grid-template-rows:2fr 1fr 1fr;
-        }
-        .item21{
-    background-color:black;
-    grid-column:1/2;
-    grid-row:1/4;
-    border:1px solid white;
-    
-    } 
-    .item22{
-    background-color:black;
-    border:1px solid white;
-    grid-column:2/4;
-    grid-row:1;
-    
-    } 
-    .item23{
-    background-color:black;
-    border:1px solid white;
-    grid-column:2/4;
-    grid-row:2;
-    
-    }   
-    .item24{
-    background-color:black;
-    border:1px solid white;
-    grid-column:2/3;
-    grid-row:3;
-    
-    }    
-    .item25{
-    background-color:black;
-    border:1px solid white;
-    grid-column:3/4;
-    grid-row:3;
-    
-    }  
-    .h8{
-    grid-row:4;
-    grid-column:4;
-    text-align:center;
-    } 
-    .box9{
-    
-    display:grid;
-    grid-row:5;
-    grid-column:1;
-    grid-template-columns:2fr 1fr;
-    grid-template-rows:1fr 1fr 1fr 1fr;
-        }
-        .item26{
-    background-color:black;
-    grid-column:1/2;
-    grid-row:1/5;
-    border:1px solid white;
-    
-    } 
-    .item27{
-    background-color:black;
-    border:1px solid white;
-    grid-column:2;
-    grid-row:1;
-    
-    } 
-    .item28{
-    background-color:black;
-    border:1px solid white;
-    grid-column:2;
-    grid-row:2;
-    
-    }   
-    .item29{
-    background-color:black;
-    border:1px solid white;
-    grid-column:2;
-    grid-row:3;
-    
-    }    
-    .item30{
-    background-color:black;
-    border:1px solid white;
-    grid-column:2;
-    grid-row:4;
-    
-    }  
-    .h9{
-    grid-row:6;
-    grid-column:1;
-    text-align:center;
-    } 
-    .box10{
-    
-    display:grid;
-    grid-row:5;
-    grid-column:2;
-    grid-template-columns:1fr 1fr;
-    grid-template-rows:1fr;
-        }
-        .item31{
-    background-color:black;
-    grid-column:1;
-    grid-row:1;
-    border:1px solid white;
-    
-    } 
-    .item32{
-    background-color:black;
-    border:1px solid white;
-    grid-column:2;
-    grid-row:1;
-    
-    } 
-    .h10{
-    grid-row:6;
-    grid-column:2;
-    text-align:center;
-    } 
-    .box11{
-    
-    display:grid;
-    grid-row:5;
-    grid-column:3;
-    grid-template-columns:2fr 1fr 1fr;
-    grid-template-rows:1fr 1fr;
-        }
-        .item33{
-    background-color:black;
-    grid-column:1;
-    grid-row:1/3;
-    border:1px solid white;
-    
-    } 
-    .item34{
-    background-color:black;
-    border:1px solid white;
-    grid-column:2;
-    grid-row:1;
-    
-    } 
-    .item35{
-    background-color:black;
-    border:1px solid white;
-    grid-column:2;
-    grid-row:2;
-    
-    } 
-    .item36{
-    background-color:black;
-    border:1px solid white;
-    grid-column:3;
-    grid-row:1;
-    
-    } 
-    .item37{
-    background-color:black;
-    border:1px solid white;
-    grid-column:3;
-    grid-row:2;
-    
-    } 
-    .h11{
-    grid-row:6;
-    grid-column:3;
-    text-align:center;
-    } 
-    .box12{
-    
-    display:grid;
-    grid-row:5;
-    grid-column:4;
-    height:7vh;
-    position:relative;
-    top:20%;
-    grid-template-columns:1fr 1fr 1fr;
-    grid-template-rows:1fr;
-        }
-        .item38{
-    background-color:black;
-    grid-column:1;
-    grid-row:1;
-    border:1px solid white;
-    
-    } 
-    .item39{
-    background-color:black;
-    border:1px solid white;
-    grid-column:2;
-    grid-row:1;
-    
-    } 
-    .item40{
-    background-color:black;
-    border:1px solid white;
-    grid-column:3;
-    grid-row:1;
-    
-    } 
-    .h12{
-    grid-row:6;
-    grid-column:4;
-    text-align:center;
-    } 
-    </style>
+    <link rel="stylesheet" href="test14.css">
 </head>
 <body>
     <div class="container">
@@ -538,6 +81,57 @@ text-align:center;
                                                     <div class="item39"></div>
                                                     <div class="item40"></div></div>
                                                     <div class="h12">Collage 012</div>
+                                                    <div class="box13">
+                                                        <div class="item41"></div>
+                                                        <div class="item42"></div>
+                                                        <div class="item43"></div>
+                                                        <div class="item44"></div>
+                                                    </div>
+                                                        <div class="h13">Collage 013</div>
+                                                        <div class="box14">
+                                                            <div class="item45"></div>
+                                                            <div class="item46"></div></div>
+                                                        <div class="h14">Collage 014</div>
+                                                        <div class="box15">
+                                                            <div class="item47"></div>
+                                                            <div class="item48"></div>
+                                                            <div class="item49"></div></div>
+                                                        <div class="h15">Collage 015</div>
+                                                        <div class="box16">
+                                                            <div class="item50"></div>
+                                                            <div class="item51"></div>
+                                                            <div class="item52"></div></div>
+                                                        <div class="h16">Collage 016</div>
+                                                        <div class="box17">
+                                                            <div class="item53"></div>
+                                                            <div class="item54"></div>
+                                                            <div class="item55"></div></div>
+                                                        <div class="h17">Collage 017</div>
+                                                        <div class="box18">
+                                                            <div class="item56"></div>
+                                                            <div class="item57"></div>
+                                                            <div class="item58"></div>
+                                                            <div class="item59"></div>
+                                                        </div>
+                                                        <div class="h18">Collage 018</div>
+                                                        <div class="box19">
+                                                            <div class="item60"></div>
+                                                            <div class="item61"></div>
+                                                            <div class="item62"></div>
+                                                            <div class="item63"></div>
+                                                            <div class="item64"></div>
+
+                                                        </div>
+                                                        <div class="h19">Collage 019</div>
+                                                        <div class="box20">
+                                                            <div class="item65"></div>
+                                                            <div class="item66"></div>
+                                                            <div class="item67"></div>
+                                                            <div class="item68"></div>
+                                                            <div class="item69"></div>
+
+                                                        </div>
+                                                        <div class="h20">Collage 020</div>
                                                  
         
     </div>
